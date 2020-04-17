@@ -12,12 +12,14 @@ It is more concerete way of making sure there is cohesion in your code.
 
 3. I would expect pass-by-value to be faster or almost equivalent in situations where the
 data structure is very small or the Big-O notation for that
-specific data structure allows, for example copying, in an O(1) amount of time
+specific data structure allows, for example copying, in an O(1) amount of time. Moreover,
+I would think in almost no situation will pass by value use less memory since in the end, 
+you still have to copy the values when passing them by value.
 
--- I would expect pass-by-reference to be faster if the process of copying the data structure
+
+4. I would expect pass-by-reference to be faster if the process of copying the data structure
  takes a long amount of time, making it a very costly task( copying to whole structure). 
  especially if it's just a single operation that does not call for uneccessary re-creation of
- the data structure
-
-
-4. 
+ the data structure. I think that pass by reference will almost always be faster since you 
+ dont have to copy the parameter.
+ 
