@@ -1,0 +1,7 @@
+1. If i did not need to change what the node points to I would use reference, since references once intialized won't change and will stay there until the end ofits lifetime. ( AKA disbanding the linked list which in most cases not something we want to do)
+
+HOWEVER, if I needed to change what the "next" refered to in the linked list, then the idea of reference would not work.
+
+2. A pointer would address the main issue that would arise from using references. That is, if i want to change what the "next" refers to in the linked list, then I can simply change what the pointer points to ( redirect the next node to the part of the linked list that I want to without having to disband the whole linked list and being forced to create a new one if i were to use references.)
+
+However, If i had to make a linked list that was not supposed to change at all (some sort of design requirement for example) then the risk of having the linked list changing would increase if i were to use a pointer over a reference. (since references are basically there to stay once they are created and cannot be changed)

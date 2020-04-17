@@ -1,0 +1,14 @@
+1. int
+2. double
+3. double
+4. ILLEGAL
+5. address of the integer i
+6. address of the integer d
+7. address of the reference to i 
+8. char
+9. ILLEGAL
+10. ILLEGAL
+11. int
+12. address of the pointer to an int
+13. ILLEGAL
+14. int

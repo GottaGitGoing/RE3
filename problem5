@@ -1,0 +1,23 @@
+1. When you pass by value: you don't have to worry about changing the original
+data. Which means one less thing that might break your program or logic. You can
+change the value that is being passed around in many different parts of your code
+with the peace of mind that once those other functions are done, you still have your
+original value that you need to keep safe.
+
+
+2. Passing a parameter by reference stops you from worrying about if the value is being
+updated at all locations. You might have a list that need to be updated in a certain function
+if they are passed by reference, everywhere that value is mentioned it will be changed. 
+It is more concerete way of making sure there is cohesion in your code.
+
+3. I would expect pass-by-value to be faster or almost equivalent in situations where the
+data structure is very small or the Big-O notation for that
+specific data structure allows, for example copying, in an O(1) amount of time
+
+-- I would expect pass-by-reference to be faster if the process of copying the data structure
+ takes a long amount of time, making it a very costly task( copying to whole structure). 
+ especially if it's just a single operation that does not call for uneccessary re-creation of
+ the data structure
+
+
+4. 

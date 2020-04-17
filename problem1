@@ -1,0 +1,11 @@
+﻿foo(int x=3, int y, int z)
+foo(2,3)
+// is 2 for x or for y? if it's for x, then z in unsatisfied!
+
+foo(int x,int y=4,int z)
+foo(1,2) 
+// what are you trying to say here? 1 for x, 2 for y? or z?
+
+foo(int x=0, int y=3, z)
+foo (6)
+// doesn't make sense, since can't know where 6 needs to be assigned to.
